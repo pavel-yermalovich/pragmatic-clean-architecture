@@ -1,4 +1,5 @@
-﻿using Bookify.Application.Abstractions.Authentication;
+﻿using Asp.Versioning;
+using Bookify.Application.Abstractions.Authentication;
 using Bookify.Application.Abstractions.Caching;
 using Bookify.Application.Abstractions.Clock;
 using Bookify.Application.Abstractions.Data;
@@ -50,6 +51,8 @@ public static class DependencyInjection
         AddCaching(services, configuration);
 
         AddHealthChecks(services, configuration);
+
+        AddApiVersioning(services);
 
         AddBackgroundJobs(services, configuration);
 
@@ -146,7 +149,24 @@ public static class DependencyInjection
             .AddUrlGroup(new Uri(configuration["KeyCloak:BaseUrl"]!), HttpMethod.Get, "keycloak");
     }
 
-    private static void AddBackgroundJobs(IServiceCollection services, IConfiguration configuration)
+	private static void AddApiVersioning(IServiceCollection services)
+	{
+		services
+			.AddApiVersioning(options =>
+			{
+				options.DefaultApiVersion = new ApiVersion(1);
+				options.ReportApiVersions = true;
+				options.ApiVersionReader = new UrlSegmentApiVersionReader();
+			})
+			.AddMvc()
+			.AddApiExplorer(options =>
+			{
+				options.GroupNameFormat = "'v'V";
+				options.SubstituteApiVersionInUrl = true;
+			});
+	}
+
+	private static void AddBackgroundJobs(IServiceCollection services, IConfiguration configuration)
     {
         services.Configure<OutboxOptions>(configuration.GetSection("Outbox"));
 
