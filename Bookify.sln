@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".files", ".files", "{9F8959
 		..\..\..\Bookify\.files\bookify-realm-export.json = ..\..\..\Bookify\.files\bookify-realm-export.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Domain.UnitTests", "..\Bookify.Domain.UnitTests\Bookify.Domain.UnitTests.csproj", "{574903B8-800B-468A-9BC9-C7881BA3BBAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookify.Domain.UnitTests", "tests\Bookify.Domain.UnitTests\Bookify.Domain.UnitTests.csproj", "{0A3801FF-8308-47A3-A4FF-AA7DBF69417F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,10 +50,10 @@ Global
 		{ADD5AF21-A432-4B22-BA2A-479AE85F98FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADD5AF21-A432-4B22-BA2A-479AE85F98FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADD5AF21-A432-4B22-BA2A-479AE85F98FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{574903B8-800B-468A-9BC9-C7881BA3BBAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{574903B8-800B-468A-9BC9-C7881BA3BBAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{574903B8-800B-468A-9BC9-C7881BA3BBAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{574903B8-800B-468A-9BC9-C7881BA3BBAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A3801FF-8308-47A3-A4FF-AA7DBF69417F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3801FF-8308-47A3-A4FF-AA7DBF69417F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3801FF-8308-47A3-A4FF-AA7DBF69417F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3801FF-8308-47A3-A4FF-AA7DBF69417F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,7 +63,7 @@ Global
 		{BE5FDC83-56E9-4CF6-8D9D-0B2C2F11D7F9} = {D97FC30F-7D4C-4EB5-9784-1F403E0CA7CF}
 		{A2F42B52-0328-4968-8EB0-B3CBCA02A808} = {D97FC30F-7D4C-4EB5-9784-1F403E0CA7CF}
 		{668B54A6-2BEC-42D5-B60F-709C24731C8C} = {D97FC30F-7D4C-4EB5-9784-1F403E0CA7CF}
-		{574903B8-800B-468A-9BC9-C7881BA3BBAA} = {280A8A34-4FED-4ADE-ACDE-8A052F516543}
+		{0A3801FF-8308-47A3-A4FF-AA7DBF69417F} = {280A8A34-4FED-4ADE-ACDE-8A052F516543}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7886086E-5FDE-4346-9331-C3CEE77E1E7A}
