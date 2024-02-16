@@ -5,3 +5,6 @@
 /Bookify.Domain.UnitTests/bin/Debug/net8.0
 /Bookify.Domain.UnitTests/obj
 /.vs/VSWorkspaceState.json
+/Bookify.Application.UnitTests/bin/Debug/net8.0
+/Bookify.Application.UnitTests/obj/Debug/net8.0
+/Bookify.Application.UnitTests/obj
