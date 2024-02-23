@@ -28,7 +28,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookify.Application.UnitTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookify.Application.IntegrationTests", "tests\Bookify.Application.IntegrationTests\Bookify.Application.IntegrationTests.csproj", "{39D940BD-C33A-4100-B346-E6F9AE44CB5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookify.Api.FunctionalTests", "tests\Bookify.Api.FunctionalTests\Bookify.Api.FunctionalTests.csproj", "{2BA26BB8-CA71-4C21-9929-7C4031A32DF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookify.Api.FunctionalTests", "tests\Bookify.Api.FunctionalTests\Bookify.Api.FunctionalTests.csproj", "{2BA26BB8-CA71-4C21-9929-7C4031A32DF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
